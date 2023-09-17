@@ -1,16 +1,8 @@
-N = int(input())
-t=0
-s=0
+m = int(input()); d= int(input())
 
-for i in range(N):
-        t += word.count("t")
-        t += word.count("T")
-        s += word.count("s")
-        s += word.count("S")
-
-if t > s:
-    print("English")
-elif t < s:
-     print("French")
-elif t>=s:
-     print("French")
+if m == 2 and d == 18:
+    print("Special")
+elif m > 2 or (m == 2 and d > 18):
+    print("After")
+elif m < 2 or (m == 2 and d < 18):
+    print("Before")

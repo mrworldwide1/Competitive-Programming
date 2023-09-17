@@ -1,16 +1,14 @@
-N = int(input())
-t=0
-s=0
+a=int(input());e=int(input())
 
-for i in range(N):
-        t += word.count("t")
-        t += word.count("T")
-        s += word.count("s")
-        s += word.count("S")
-
-if t > s:
-    print("English")
-elif t < s:
-     print("French")
-elif t>=s:
-     print("French")
+if a >= 3 and e <= 4:
+  print("TroyMartian")
+  if a <= 6 and e >= 2:
+    print("VladSaturnian")
+elif a <= 6 and e >= 2:
+  print("VladSaturnian")
+  if a <= 2 and e <= 3:
+    print("GraemeMercurian")
+elif a <= 2 and e <= 3:
+  print("GraemeMercurian")
+else:
+  pass

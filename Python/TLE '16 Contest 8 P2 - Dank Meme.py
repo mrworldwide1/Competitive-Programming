@@ -1,16 +1,11 @@
-N = int(input())
-t=0
-s=0
-
-for i in range(N):
-        t += word.count("t")
-        t += word.count("T")
-        s += word.count("s")
-        s += word.count("S")
-
-if t > s:
-    print("English")
-elif t < s:
-     print("French")
-elif t>=s:
-     print("French")
+binaryList=[];memeList=""
+for t in range(int(input())):
+  binary = (format(int(input()), 'b'))
+  for digit in str(binary):
+      binaryList.append(digit)
+  for num in binaryList:
+    if num == "1":
+        memeList+="dank "
+    else:
+        memeList+="meme "
+  print(memeList);binaryList=[];memeList = ""
