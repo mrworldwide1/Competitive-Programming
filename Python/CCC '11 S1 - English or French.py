@@ -1,12 +1,11 @@
 import sys
 
-N = int(sys.stdin.readline())
 t=0
 s=0
 text=[]
 
-for i in range(N):
-    text.append(input().lower())
+for i in range(int(sys.stdin.readline())):
+    text.append(sys.stdin.readline().lower())
 
 for word in text:
     t += word.count("t")
