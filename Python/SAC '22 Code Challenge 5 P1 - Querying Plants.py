@@ -1,8 +1,8 @@
 N = int(input())
 C = int(input())*2
 
-plants = map(int, input().split())
-print(plants)
+plants = list(map(int, input().split()))
+# print(plants)
 ans = [x + C for x in plants]
 
 # if len(plants) == 1:
