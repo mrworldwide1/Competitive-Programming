@@ -1,17 +1,13 @@
-N = int(input())
-C = int(input())*2
+import sys
 
-plants = list(map(int, input().split()))
-# print(plants)
-ans = [x + C for x in plants]
+N = int(sys.stdin.readline())
+C = int(sys.stdin.readline())*2
+finalAns = ""
 
-# if len(plants) == 1:
-#         plants[0] += C
-#         ans += str(f"{plants[0]} ")
-#         print(ans)
-# else:
-#     for i in plants:
-#         i += C
-#         ans += i
+plants = list(map(int, sys.stdin.readline().split()))
+ans = [plant + C for plant in plants]
 
-print(str(ans).lstrip('[').rstrip(']'))
+for num in ans:
+    finalAns += str(f"{num} ")
+
+print(finalAns)
