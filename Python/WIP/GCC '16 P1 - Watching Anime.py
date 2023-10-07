@@ -15,3 +15,5 @@
 
 initialLine = input().split(" ")
 N = range(int(initialLine[0])); A = range(int(initialLine[1])); C = range(int(initialLine[2]))
+
+print(N, A, C)
