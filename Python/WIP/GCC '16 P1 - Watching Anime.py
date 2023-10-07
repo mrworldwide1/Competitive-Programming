@@ -12,10 +12,12 @@
 
 # from this point on, loops can be used and remove ai-ab & ci-di from N, inclusive.
 # then finally print() the number of elements in N.
-# use liset methods to remove entire range of hours weeb cannot watch anime
+# use list methods to remove entire range of hours weeb cannot watch anime
 
 N, A, C = (map(int, input().split()))
 
-# for i in range(N):
-#     print(i+1)
+for i in range(N):
+    print(i+1)
+
+while i <
 
