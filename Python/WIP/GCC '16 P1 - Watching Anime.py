@@ -1,19 +1,19 @@
-totalHours = {}
+totalHours = []
 N, A, C = (map(int, input().split()))
 
 for hour in range(N):
-    totalHours[hour+1] = "n"
+    totalHours.append(hour+1)
 
-for streaming in range(A):
+for stream in range(A):
     ai, bi = (map(int, input().split()))
     while ai <= bi:
-        totalHours[ai] = "y"
+        totalHours[ai-1] = "y"
         ai+=1
 
-for commitment in range(C):
+for commit in range(C):
     ai, bi = (map(int, input().split()))
     while ai <= bi:
-        totalHours[ai] = "n"
+        totalHours[ai-1] = ai
         ai+=1
 
-print(list(totalHours.values()).count("y"))
+print(totalHours.count("y"))
