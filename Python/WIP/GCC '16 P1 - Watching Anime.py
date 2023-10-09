@@ -26,5 +26,7 @@ for streaming in range(A):
         totalHours[ai] = "cannot"
         ai+=1
 
+print(totalHours)
+
 
 # print(hours)
