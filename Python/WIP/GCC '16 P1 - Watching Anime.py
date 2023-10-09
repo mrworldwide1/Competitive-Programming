@@ -16,9 +16,4 @@ for commitment in range(C):
         totalHours[ci] = "cannot"
         ci+=1
 
-output = 0
-for n in totalHours.values():
-    if n == "can":
-        output += 1
-
-print(output)
+print(list(totalHours.values()).count("can"))
