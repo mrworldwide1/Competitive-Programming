@@ -13,11 +13,19 @@
 # from this point on, loops can be used and remove ai-ab & ci-di from N, inclusive.
 # then finally print() the number of elements in N.
 # use list methods to remove entire range of hours weeb cannot watch anime
-
+# or just use dictionary with key:value format as hour:availablity
+totalHours = {}
 N, A, C = (map(int, input().split()))
 
-for i in range(N):
-    print(i+1)
+for hour in range(N):
+    totalHours[hour+1] = "can"
 
-while i <
+for streaming in range(A):
+    ai, bi = (map(int, input().split()))
+    while ai < bi:
+        # set ai key value in totalhours to can
+        # ai+=1
+
+
+# print(hours)
 
