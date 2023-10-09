@@ -10,11 +10,14 @@ for num in range(n):
     nNumbs.append(num+1)
 nNumbs.reverse()
 
+i=0
 while i < :
     if mNumbs[i] + nNumbs[i] == 10:
         ways += 1
     else:
         pass
 
-print("There is 1 way to get the sum 10.")
-print("There are 5 ways to get the sum 10.")
+if ways == 0:
+    print("There is 1 way to get the sum 10.")
+else:
+    print(f"There are {ways} ways to get the sum 10.")
