@@ -22,10 +22,9 @@ for hour in range(N):
 
 for streaming in range(A):
     ai, bi = (map(int, input().split()))
-    while ai < bi:
-        # set ai key value in totalhours to can
-        # ai+=1
+    while ai <= bi:
+        totalHours[ai] = "cannot"
+        ai+=1
 
 
 # print(hours)
-
