@@ -18,3 +18,14 @@ for i in range(N):
         T+=125000
 
 print(T)
+
+# alt method of using dict instead
+# # spicelist = {
+# "Poblano" : 1500,
+# "Mirasol" : 6000,
+# "Serrano" : 15500,
+#}
+#
+#
+#
+#
