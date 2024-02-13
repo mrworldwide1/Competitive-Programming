@@ -26,6 +26,7 @@ print(T)
 # "Serrano" : 15500,
 #}
 #
-#
+# T += spicelist[inpput]
+##
 #
 #
