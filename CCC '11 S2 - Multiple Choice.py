@@ -20,5 +20,8 @@ while i < N:
 for _ in range(N):
     if student_ans[stud_i] == teacher_ans[stud_i]:
         C += 1
+        stud_i += 1
+    else:
+        stud_i += 1
 
 print(C)
