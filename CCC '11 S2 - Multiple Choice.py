@@ -16,7 +16,8 @@ while i < N:
     teacher_ans.append(input())
     i+=1
 
-# SS from grass problem solving method
+# SS from grass problem solving method, where stud_i is the student answer which corresponds to the teacher answer; essentially the test's question number
+# stud_i = 0 is Q1, stud_i = 1 is Q2, etc.
 for _ in range(N):
     if student_ans[stud_i] == teacher_ans[stud_i]:
         C += 1
