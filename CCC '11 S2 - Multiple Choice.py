@@ -15,7 +15,6 @@ i = 0
 while i < N:
     teacher_ans.append(input())
     i+=1
-print(student_ans, teacher_ans)
 
 # SS from grass problem solving method
 for _ in range(N):
