@@ -2,8 +2,10 @@ N = int(input())
 student_ans = []
 teacher_ans = []
 i = 0
-# i for student answers, j for teacher answers, need two varaibles otherwise this first while loop while evaluate to False and skip past teacher answers, returning C.
+stud_i = 0
+C = 0
 
+# the lines after N are 2N, wo we use two while loops. One for the first half of 2N and one for the other half.
 while i < N:
     student_ans.append(input())
     i+=1
@@ -14,4 +16,10 @@ while i < N:
     teacher_ans.append(input())
     i+=1
 print(student_ans, teacher_ans)
-# since 2N lines after N, we can use range() function and plug in 2N//2
+
+# SS from grass problem solving method
+for _ in range(N):
+    if student_ans[stud_i] == teacher_ans[stud_i]:
+        C += 1
+
+print(C)
